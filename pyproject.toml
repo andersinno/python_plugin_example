@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "python_plugin_example"
+version = "0.1.0"
+description = ""
+authors = ["Frank Wickström <frank.wickstrom@anders.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pluggy = "^0.13.1"
+requests = "^2.25.1"
+mypy = "^0.812"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
