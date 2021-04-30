@@ -3,7 +3,7 @@ from typing import Any, Callable, List, TypeVar, cast
 import pluggy  # type: ignore
 
 F = TypeVar("F", bound=Callable[..., Any])
-hookspec = cast(Callable[[F], F], pluggy.HookspecMarker("plugin_example"))
+hookspec = cast(Callable[[F], F], pluggy.HookspecMarker("python_plugin_example"))
 
 
 class PluginExampleHookSpec:

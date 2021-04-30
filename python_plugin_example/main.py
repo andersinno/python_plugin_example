@@ -7,7 +7,7 @@ from python_plugin_example.plugins.icanhazdadjoke import ICanHazDadJokePlugin
 
 class App:
     def __init__(self) -> None:
-        self.pm: pluggy.PluginManager = pluggy.PluginManager("plugin_example")
+        self.pm: pluggy.PluginManager = pluggy.PluginManager("python_plugin_example")
         self.pm.add_hookspecs(PluginExampleHookSpec)
 
         self.pm.register(ChuckNorrisPlugin())

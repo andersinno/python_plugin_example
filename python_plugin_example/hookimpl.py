@@ -4,4 +4,4 @@ import pluggy  # type: ignore
 
 F = TypeVar("F", bound=Callable[..., Any])
 
-hookimpl = cast(Callable[[F], F], pluggy.HookimplMarker("plugin_example"))
+hookimpl = cast(Callable[[F], F], pluggy.HookimplMarker("python_plugin_example"))
